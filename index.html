@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website  </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/af020c3337.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MLOGO.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#dsa">DSA</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Coder</p>
+                <h1>Hi, I'm <span>Mehul</span><br>Dongre From SRM University</h1>
+            </div>
+        </div>
+
+    </div>
+    <!----------------about----------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>I’m Mehul Dongre, a second-year B.Tech student specializing in Computer Science Engineering at SRM Chennai. With a budding curiosity for tech, I'm immersing myself in Java programming and exploring Data Structures and Algorithms, building a strong foundation in these areas. My interest goes beyond academics—I’ve actively contributed to my college’s sponsorship committee, successfully helping to secure brands like Redbull, McCaffeine, and Ajio for our fest. 
+                        I’ve also been involved in the MUN society and drama club, which enriched my ability to communicate, collaborate, and take on diverse challenges. Driven by my knack for consulting and management, I’m expanding my skills in content writing, graphic design, marketing, and prompt engineering. My family’s background in consulting has inspired my own interest in the field, as I genuinely enjoy understanding people’s ideas and collaborating to solve problems. I’m a hard-working, motivated individual who thrives in team settings and is excited about the learning journey ahead.</p>                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('activities')">Activities</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('dsa')">DSA</p>
+                  </div>
+                  <div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Spnosorship Comiittee</span><br>Managing fest level sponsors</li>
+                            <li><span>Drama Club</span><br>Competed in Nukkad Naatak at IITM and IITK</li>
+                            <li><span>Karate Player</span><br>National Level Silver medalist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Reseach Project</span><br>Python-based Flood Detecting System</li>
+                            <li><span>Java-mySql Based Project</span><br>Area-Specific Smart-Bin Management System</li>
+                            <li><span>Iot Based Project</span><br>Wifi Controlled Relay System</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="dsa">
+                        <ul>
+                            <li><span>Linked Lists</span><br>Singly, Doubly and Circular Linked Lists</li>
+                            <li><span>Stacks</span><br>Stack formation using Linked list, Arrays</li>
+                            <li><span>Queues</span><br>Queue formation using Linked list, Arrays</li>
+                            <li><span>Heaps</span><br>Max, Min Heaps</li>
+                            <li><span>Binary Trees</span><br>Complete, Balanced, Perfect Binary Trees</li>
+                            <li><span>Binary Search Trees</span><br>Ordered Division on value in either Right or Left</li>
+                            <li><span>Graphs</span><br>Directed, Undirected, Weighted, Null and Simple Graphs</li>
+                            <li><span>Complexities</span><br>Space, Time Complexities</li>
+                        </ul>
+                    </div>      
+                    </div>
+                  </div>
+                </div>                   
+            </div>
+        </div>
+    </div>
+    <!----------------dsa----------> 
+    <div id="dsa">
+        <div class="container">
+            <h1 class="sub-title">DSA Learnings</h1>
+            <div class="dsa-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Linked List</h2>
+                    <p>A data structure where nodes link to each other in sequence. Singly linked lists connect one way, doubly linked lists connect both ways, and circular linked lists loop back to the start.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Stacks</h2>
+                    <p>A LIFO structure with push and pop operations. It can be implemented using arrays (fixed size) or linked lists (dynamic size).</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-line"></i>
+                    <h2>Queues</h2>
+                    <p>A FIFO structure where elements are added at the rear and removed from the front, implemented with arrays (fixed) or linked lists (flexible).</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Heaps</h2>
+                    <p>A tree where the largest or smallest element is at the root, depending on if it’s a max or min heap, ideal for priority-based tasks</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tree"></i>
+                    <h2>Binary trees</h2>
+                    <p>A structure where each node has up to two children. Complete binary trees fill levels from left to right, balanced trees keep subtrees almost equal in height, and perfect binary trees are fully filled and symmetrical.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-folder-tree"></i>
+                    <h2>Binary Search trees</h2>
+                    <p>A binary tree with sorted nodes, allowing efficient search, insert, and delete operations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Graphs</h2>
+                    <p>A set of nodes connected by edges, representing relationships. It can be directed or undirected, weighted or unweighted, and is useful in networks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Complexities</h2>
+                    <p>Measures time and memory an algorithm requires. Time complexity shows runtime growth; space complexity shows memory usage, both expressed in Big O notation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------projects------------>
+    <div id="projects">
+       <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+        <div class="work">
+        <img src="images/work.png">
+        <div class="layer">
+            <h3>IotBased Project</h3>
+            <p>The project aims to create a wifi controlled relay system to make smart home appliances smarter.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/dsa.jpg">
+        <div class="layer">
+            <h3>DSA Roleplay</h3>
+            <p>The roleplay presentation aims to explain the working of CPU Scheduling in terms of FCFS and SJF</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+    </div>
+    <div class="work">
+        <img src="images/app.jpg">
+        <div class="layer">
+            <h3>Java Based Project</h3>
+            <p>This project aims to create Smartbin Management System to keep the local area trashcan in check from overflowing.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</div>
+  <a href="#" class="btn">See more</a>    
+</div> 
+    </div>
+   <!---------------------contact-------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mehuldongre.25@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9425790167</p>
+            <div class="social-icons">
+                
+                <a href="https://www.linkedin.com/in/mehul-dongre-9981862b2/"><i class="fa-brands fa-twitter"></i>></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <a href="images/Resume pdf.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+            <div class="contact-right">
+                <form>
+                 <input type="text" name="Name" placeholder="Your Name" required>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                 <textarea name="Messgae" rows="6" placeholder="Your Messgae"></textarea>   
+                 <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mehul. <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+   </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    </body>
+</html>
